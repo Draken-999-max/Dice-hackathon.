@@ -1,0 +1,74 @@
+<div class="top-nav-first">
+    <ul class="top-nav-first-list">
+        <li class="top-nav-first-items"><a href="#" class="top-nav-first-links">Home</a></li>
+        <li class="top-nav-first-items"><a href="#" class="top-nav-first-links">features</a></li>
+        <li class="top-nav-first-items"><a href="#" class="top-nav-first-links">about</a></li>
+        <li class="top-nav-first-items"><a href="#" class="top-nav-first-links">contacts</a></li>
+    </ul>
+</div>
+<div class="top-nav-front-nav">
+    <div class="top-nav-front-nav-logo-box">
+        <img src="img/solar-system-stroke-rounded black.svg" class="top-nav-front-nav-logo" alt="top-nav-front-nav">
+    </div>
+    <div class="top-nav-front-nav-text">ORBIT</div>
+    <nav class="top-nav-front-nav-nav">
+        <ul>
+            <li class="top-nav-front-nav-items"><a href="#" class="top-nav-front-nav-links">pricing</a></li>
+            <li class="top-nav-front-nav-items"><a href="#" class="top-nav-front-nav-links">solutions</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="top-nav-last">
+    <div class="top-nav-settings-box">
+        <a href="#">
+            <img src="img/setting-07-stroke-rounded.svg" class="top-nav-settings-box-icon" alt="icon">
+        </a>
+        <span class="top-nav-settings-box-span">
+            2
+        </span>
+    </div>
+    <div class="top-nav-login">
+        <a href="sigin.html" class="top-nav-login-link">login</a>
+    </div>
+    <div class="top-nav-sigin">
+        <a href="signup.html" class="top-nav-sigin-link">Get Started</a>
+    </div>
+</div>
+</section>
+<section class="header">
+    <div class="header-img-box">
+        <img src="img/orbit-logo.png" alt="orbit" class="header-img">
+    </div>
+    <div class="header-container">
+        <h2 class="header-container-heading">
+            <span class="header-container-heading-first">run your <span class="header-container-heading-blue">
+                    operations</span></span>
+            <span class="header-container-heading-second">keep everything in orbit</span>
+        </h2>
+        <p class="header-container-text">
+            manage projects, tasks, teams and daily operations from one centralized platform, keeping your team
+            organized, effective and on
+            track
+        </p>
+        <div class="header-cta">
+            <a href="signup.html" class="btn btn-black">Join for free</a>
+            <a href="#" class="btn btn-white">Explore Orbit <span class="btn-white-arrow">&rarr;</span></a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="section-partner">
+        <p class="section-partner-text">
+            Trusted by operation teams at
+        </p>
+        <div class="section-partner-images">
+            <img src="img/Google_Logo_0.svg" alt="logo" class="section-partner-logo">
+            <img src="img/Headspace_Logo_0.svg" alt="logo" class="section-partner-logo">
+            <img src="img/Meta_idlf4cVSsS_0.svg" alt="logo" class="section-partner-logo section-partner-logo-big">
+            <img src="img/Netflix_Logo_0.svg" alt="logo" class="section-partner-logo">
+            <img src="img/pinterest.svg" alt="logo" class="section-partner-logo">
+        </div>
+    </div>
+</footer>
+</div>
