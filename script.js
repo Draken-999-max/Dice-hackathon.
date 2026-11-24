@@ -53,7 +53,7 @@ rollBtn.addEventListener("click", function () {
     const dice = Math.trunc(Math.random() * 6) + 1;
     diceel.classList.remove("hidden");
     diceel.src = `dice-${dice}.png`;
-    if (dice !== 1) {
+    if (dice !== 1 && dice !== 3) {
       currentScore += dice;
       document.getElementById(`current-score-${activePlayer}`).textContent =
         currentScore;
@@ -67,7 +67,7 @@ holdBtn.addEventListener("click", function () {
     scores[activePlayer] += currentScore;
     document.querySelector(`#score--${activePlayer}`).textContent =
       scores[activePlayer];
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 50) {
       playing = false;
       diceel.classList.add("hidden");
       document
