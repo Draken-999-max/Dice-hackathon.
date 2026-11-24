@@ -10,6 +10,7 @@ const player0cl = document.querySelector(".player-0");
 const player1cl = document.querySelector(".player-1");
 const holdBtn = document.querySelector(".btn--hold");
 const newBtn = document.querySelector(".btn--new");
+const btnHelp = document.querySelector(".btn--help");
 
 const switchPlayer = function () {
   currentScore = 0;
@@ -19,7 +20,14 @@ const switchPlayer = function () {
   player1cl.classList.toggle("player-active");
   activePlayer = activePlayer === 0 ? 1 : 0;
 };
-
+const addHidden = function () {
+  document.querySelector(".modal").classList.add("hidden");
+  document.querySelector(".block").classList.add("hidden");
+};
+const removeHidden2 = function () {
+  document.querySelector(".modal").classList.remove("hidden");
+  document.querySelector(".block").classList.remove("hidden");
+};
 let currentScore,
   activePlayer,
   scores,
@@ -74,3 +82,20 @@ holdBtn.addEventListener("click", function () {
   }
 });
 newBtn.addEventListener("click", init);
+
+btnHelp.addEventListener("click", function () {
+  removeHidden2();
+});
+document
+  .querySelector(".block-header-times")
+  .addEventListener("click", function () {
+    addHidden();
+  });
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    addHidden();
+  }
+});
+document.querySelector(".modal").addEventListener("click", function () {
+  addHidden();
+});

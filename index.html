@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="modal hidden"></div>
+    <div class="block hidden">
+      <div class="block-header">
+        <div class="block-header-text">HOW TO PLAY</div>
+        <div class="block-header-times">&times;</div>
+      </div>
+      <div class="block-2">
+        <div class="block-content">
+          🎲 1. ROLL THE DICE Click the Roll Dice button to roll a die. Each
+          roll adds to your current score.
+        </div>
+        <div class="block-content">
+          ⚠️ 2. WATCH OUT FOR 1 If you roll a 1, you lose all the points
+          accumulated during your current turn, and the turn switches to the
+          other player.
+        </div>
+        <div class="block-content">
+          📥 3. HOLD YOUR POINTS Click Hold to add your current score to your
+          total score. Your turn then passes to the other player.
+        </div>
+        <div class="block-content">
+          🏆 4. WIN THE GAME The first player to reach 50 points wins the game!
+        </div>
+        <div class="block-content">
+          🔄 NEW GAME Want a fresh start? Click New Game to reset the scores and
+          begin again.
+        </div>
+      </div>
+    </div>
     <div class="container">
       <section class="player player-0 player-active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -26,6 +55,7 @@
       </section>
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--help">❓Help</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </div>
