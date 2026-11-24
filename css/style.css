@@ -48,6 +48,7 @@ body {
   filter: blur();
   display: flex;
   border-radius: 2rem;
+  overflow: hidden;
 }
 .player {
   flex: 50%;
@@ -85,12 +86,22 @@ body {
 .current-name {
   font-size: 1.7rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 .current-score {
   font-size: 3.5rem;
 }
 .player-active {
   background-color: rgba(255, 255, 255, 0.4);
+}
+.player-active .name {
+  font-weight: 700;
+}
+.player-active .score {
+  font-weight: 400;
+}
+.player-active .current {
+  opacity: 1;
 }
 .btn {
   border-radius: 2rem;
@@ -100,13 +111,42 @@ body {
   border: none;
   background-color: none;
   text-transform: uppercase;
-  opacity: 0.7;
   padding: 0.7rem 2.5rem;
   font-size: 1.8rem;
   color: #444;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 .btn::first-letter {
   font-size: 2.4rem;
   display: inline-block;
   margin-right: 0.7rem;
+}
+.btn--hold {
+  top: 46.1rem;
+}
+.btn--roll {
+  top: 39.3rem;
+}
+.btn--new {
+  top: 4rem;
+}
+.btn:hover {
+  transform: translate(-50%, -2px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.dice {
+  position: absolute;
+  height: 10rem;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+}
+.hidden {
+  display: none;
 }
